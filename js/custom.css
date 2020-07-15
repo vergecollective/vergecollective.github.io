@@ -1,0 +1,221 @@
+.bg-dark {
+    background-color: #ede7e7;
+    color: #000;
+    font-family: audi;
+}
+
+.agenda-page{
+    box-sizing: content-box;
+    height: 60vh;
+    transform: translate(0px, -60%);
+    font-family: audi;
+/*    background: #fdf8f8;*/
+/*    border-radius: 1rem;*/
+/*    padding: 2rem;*/
+/*    z-index: 3;*/
+}
+
+.agenda-page .title{
+    line-height: 3rem;
+    font-weight: 700;
+}
+.agenda-page .day{
+    font-size: 1.4rem;
+/*    line-height: 2.4rem;*/
+    
+}
+.agenda-page .red-arrow{
+    width: 1.8em;
+    padding: .4em 0px;
+}
+.agenda-page .black-arrow{
+    width: 4em;
+    margin-right: -15px;
+}
+.day-num{
+    border: 2px solid #bb0a30;
+    border-radius: 4rem;
+    line-height: 2rem;
+}
+
+.agenda-page .content{
+    font-size: 1.3rem;
+    line-height: 2em;
+    font-weight: 500;
+}
+.agenda-page .header{
+    font-weight: 300;
+}
+.agenda-page >*>.js-h-txt__l{
+    background: #fdf8f8;
+/*    background: red;*/
+    width: 55rem;
+
+}
+.js-h-txt__l.bg-grey>*{
+    background: #E2E2E2;
+}
+.agenda-page >.oh:nth-child(1)>.js-h-txt__l{
+    border-radius: 10px 10px 0px 0px;
+}
+.agenda-page >.oh:nth-last-child(1)>.js-h-txt__l{
+    border-radius: 0px 0px 10px 10px;
+}
+.liveBtn{
+    cursor: pointer;
+/*    z-index: 3;*/
+}
+.liveBtn>.js-h-txt__l{
+    
+    background: #bb0a30;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+/*    padding: .2em .5em;*/
+    width: 10rem;
+    text-align: center;
+    border-radius: 2em;
+    line-height: 2em;
+/*    height: 1.2em;*/
+}
+#liveVideoFrame{
+    height: 80vh;
+    width: 100%;
+}
+.vm{
+    visibility: visible;
+    background: url("/2020/static/3BG-web.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+}
+.foot:after{
+    background: #bb0a30;
+}
+.rm-row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.audiFont{
+    font-family: audi;
+}
+.back-btn{
+    position: absolute;
+    width: 20vw;
+    top: 1em;
+    left: 1em;
+    z-index: 5;
+    font-family: audi;
+    font-size: 1.6rem;
+    border: 1.5px solid #707070;
+    width: 6em;
+    text-align: center;
+    border-radius: 2em;
+    font-weight: 700;
+    padding: .2em 0px;
+    color: #0b0a0a;
+    transition: .4s;
+}
+.back-btn:hover{
+    text-decoration: none;
+    color: #f0f0f0;
+    background: rgba(112, 112, 112, 0.5);
+    border: 1.5px solid #f0f0f0;
+    transition: .4s;
+}
+.bg-icon{
+    position: absolute;
+    width: 20vw;
+    
+    z-index: -1;
+}
+.p-icon-0{
+    left: 4vw;
+    width: 16vw;
+    margin-top: 1vw;
+}
+.p-icon-1{
+    left: 0px;
+    top: 150px;
+}
+.p-icon-2{
+    top: 1300px;
+    right: 1vw;
+    width: 10vw;  
+}
+
+.p-icon-3{
+    top: 1950px;
+    right: 10vw;
+    width: 16vw;
+}
+.p-icon-4{
+    top: 2000px;
+    left: -16vw;
+    width: 50vw;
+}
+.p-icon-5{
+    bottom: 600px;
+    right: 0vw;
+    width: 50vw;
+}
+.w90{
+   width: 90vw; 
+}
+.intro__content h3{
+    line-height: 1.4em;
+}
+@media (max-width: 651px){
+    .desktop-only {
+        display: none !important;
+    }
+    .hiw h3{
+        font-size: 2.5em;
+    }
+    .vm{
+        background: url("/2020/static/11Mobile-BG.png");
+        background-size: cover;
+    }
+    #liveVideoFrame{
+        height: 50vh;
+    }
+    .agenda-page{
+        width: 100% !important;
+    }
+    .agenda-page>*{
+        width: 100%  !important;
+    }
+    .agenda-page>*>*{
+        width: 100%  !important;
+    }
+    .agenda-page .time, .agenda-page .mins,.agenda-page .activity{
+        font-size: 1rem;
+    }
+    .header-page .header-text{
+        width: 80vw;
+        font-size: 5.4vw;
+    }
+    .intro__content h3{
+        text-align: center;
+        font-size: 5vw;
+    }
+    .p-icon-0{
+        left: -4vw;
+        width: 35vw;
+    }
+    
+}
+@media (min-width: 650px){
+    .agenda-page {
+/*        font-size: 3.2rem;*/
+    }
+    .hero__title {
+        font-size: 2.6rem;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+    .vm{
+        background: url("/2020/static/3BG-web.png");
+    }
+}
